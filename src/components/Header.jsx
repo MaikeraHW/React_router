@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes, BrowserRouter } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import img from '../assets/LogoCS.png'
 
 import styles from './Header.module.css'
@@ -6,7 +6,6 @@ import styles from './Header.module.css'
 function Header(){
 
     return (
-        <BrowserRouter>
         <div className={styles.header}>
             <div className={styles.logo}>
                 <NavLink to="/">
@@ -18,11 +17,10 @@ function Header(){
                     <li><NavLink to="/" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Home</NavLink></li>
                     <li><NavLink to="/sobre" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Sobre Nós</NavLink></li>
                     <li><NavLink to="/contato" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Contato</NavLink></li>
-                    <li><NavLink to="/info" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Informações</NavLink></li>
+                    <li><NavLink to="/projects" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Informações</NavLink></li>
                 </ul>
             </nav>
         </div>
-        </BrowserRouter>
     )
 }
 

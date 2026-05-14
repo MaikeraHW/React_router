@@ -1,30 +1,24 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
-import Header from '../src/components/Header'
+import Header from './components/Header.jsx'
+import Home from './pages/Home.jsx'
+import Projects from './pages/Projects.jsx'
 
 function App() {
 
   return (
-    // <BrowserRouter>
-
+    <BrowserRouter>
      <Header />
-
-    //   {/* <nav>
-    //     <ul>
-    //       <li> <Link to="/"> Home </Link> </li>
-    //       <li> <Link to="/sobre"> Sobre </Link> </li>
-    //     </ul>
-    //   </nav> */}
-    
-
-    //     {/* <Routes>
-    //       <Route path="/" element={}/>
-    //       <Route path="/sobre" element={<h1>Aqui está a tela Sobre mim</h1>}/>
-    //       <Route path="*" element={<p>Página não encontrada</p>} />  
-    //     </Routes> */}
-    // </BrowserRouter>
-
-
+     <Routes>
+      <Route path="/" element={'Home'} />
+      <Route path="/sobre" element={'Sobre'} />
+      <Route path="/contato" element={'Contato'} />
+      <Route path="/projects" element={<Projects />} />
+        {/*<Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
+        */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 
