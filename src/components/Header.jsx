@@ -15,10 +15,10 @@ function Header(){
             </div>
             <nav className={styles.headerNav}>
                 <ul className={styles.headerList}>
-                    <li><NavLink to="/" className={styles.navLink}>Home</NavLink></li>
-                    <li><NavLink to="/sobre" className={styles.navLink}>Sobre Nós</NavLink></li>
-                    <li><NavLink to="/contato" className={styles.navLink}>Contato</NavLink></li>
-                    <li><NavLink to="/info" className={styles.navLink}>Informações</NavLink></li>
+                    <li><NavLink to="/" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Home</NavLink></li>
+                    <li><NavLink to="/sobre" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Sobre Nós</NavLink></li>
+                    <li><NavLink to="/contato" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Contato</NavLink></li>
+                    <li><NavLink to="/info" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Informações</NavLink></li>
                 </ul>
             </nav>
         </div>

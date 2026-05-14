@@ -55,12 +55,31 @@
     margin: 0 1.5em;
 }
 
-.navLink{
+.navLink {
     text-decoration: none;
     color: var(--textcolor);
     font-size: 1.4em;
+    position: relative;
+    text-decoration: none;
+    color: white;
 }
 
-.navLink:hover{
-    border-bottom: 3px solid var(--mainpurple)
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--mainpurple);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
 }
