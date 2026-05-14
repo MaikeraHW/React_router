@@ -1,25 +1,28 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
-import AppCopy from './App copy'
+import Header from '../src/components/Header'
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <nav>
-        <ul>
-          <li> <Link to="/"> Home </Link> </li>
-          <li> <Link to="/sobre"> Sobre </Link> </li>
-        </ul>
-      </nav>
+    // <BrowserRouter>
+
+     <Header />
+
+    //   {/* <nav>
+    //     <ul>
+    //       <li> <Link to="/"> Home </Link> </li>
+    //       <li> <Link to="/sobre"> Sobre </Link> </li>
+    //     </ul>
+    //   </nav> */}
     
 
-        <Routes>
-          <Route path="/" element={<AppCopy />}/>
-          <Route path="/sobre" element={<h1>Aqui está a tela Sobre mim</h1>}/>
-          <Route path="*" element={<p>Página não encontrada</p>} />  
-        </Routes>
-    </BrowserRouter>
+    //     {/* <Routes>
+    //       <Route path="/" element={}/>
+    //       <Route path="/sobre" element={<h1>Aqui está a tela Sobre mim</h1>}/>
+    //       <Route path="*" element={<p>Página não encontrada</p>} />  
+    //     </Routes> */}
+    // </BrowserRouter>
 
 
   )
