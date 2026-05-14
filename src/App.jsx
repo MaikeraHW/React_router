@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Router, Link } from 'react-router-dom'
-
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
+import AppCopy from './App copy'
 
 function App() {
 
@@ -9,11 +9,26 @@ function App() {
       <nav>
         <ul>
           <li> <Link to="/"> Home </Link> </li>
+          <li> <Link to="/sobre"> Sobre </Link> </li>
         </ul>
       </nav>
     
+
+        <Routes>
+          <Route path="/" element={<AppCopy />}/>
+          <Route path="/sobre" element={<h1>Aqui está a tela Sobre mim</h1>}/>
+          <Route path="*" element={<p>Página não encontrada</p>} />  
+        </Routes>
     </BrowserRouter>
+
+
   )
 }
 
+//BrowserRouter é onde faz os direcionamentos
+//Routes é o espaço onde será inserido os conteúdos dinâmicos
+//Route é o elemento que será inserido
+// Route path="*" Usada pra quando não encontrar a página
+
 export default App
+
