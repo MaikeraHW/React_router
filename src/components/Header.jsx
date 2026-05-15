@@ -17,7 +17,7 @@ function Header(){
                     <li><NavLink to="/" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Home</NavLink></li>
                     <li><NavLink to="/sobre" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Sobre Nós</NavLink></li>
                     <li><NavLink to="/contato" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Contato</NavLink></li>
-                    <li><NavLink to="/projects" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Informações</NavLink></li>
+                    <li><NavLink to="/projects" className={({isActive}) => `${isActive ? styles.active : ''} ${styles.navLink}`}>Projetos</NavLink></li>
                 </ul>
             </nav>
         </div>

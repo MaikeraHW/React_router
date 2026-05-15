@@ -1,0 +1,17 @@
+.articleBody{
+    flex: 0 0 calc(20%);
+    padding: 1rem;
+    border: 1px solid grey;
+    margin: 1rem 0;
+}
+
+.articleName{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.articleDescription{
+    color: grey;
+}

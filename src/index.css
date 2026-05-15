@@ -2,9 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
   --maincolor: #2d2e3c;
   --secondcolor: #181621;
   --mainpurple: #6c3cf0;
+
+  background-color: var(--maincolor);
+  scrollbar-gutter: stable;
 }
+
+body{
+  max-width: 80dvw;
+  margin: auto;
+}
+
 
